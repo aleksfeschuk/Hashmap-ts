@@ -2,7 +2,7 @@
 
 Clone project:
 ``` bash
-git clone this repository
+git clone <URL_repository>
 cd HashMap
 
 Install, compile and run:
