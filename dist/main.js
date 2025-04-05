@@ -1,8 +1,7 @@
-import { createHashMap } from "./hashMap";
-
-const test = createHashMap(16, 0.75);
-
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const hashMap_1 = require("./hashMap");
+const test = (0, hashMap_1.createHashMap)(16, 0.75);
 test.set("apple", "red");
 test.set("banana", "yellow");
 test.set("carrot", "orange");
@@ -15,14 +14,11 @@ test.set("ice cream", "white");
 test.set("jacket", "blue");
 test.set("kite", "pink");
 test.set("lion", "golden");
-
 console.log('Length', test.length());
 console.log('Entries', test.entries());
-
 test.set('apple', 'green');
 console.log('New apple value:', test.get('apple'));
 console.log('Length after overwrite:', test.length());
-
 test.set('moon', 'silver');
 console.log("Length after growth:", test.length());
 console.log("Buckets length:", test.buckets.length);
